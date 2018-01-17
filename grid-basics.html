@@ -6,113 +6,155 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/added-style.css">
     <title>Playing With Grid</title>
 </head>
 <body>
     <p>
-        Bullshit, stuff, and more stuff, nomsayn? But really, does content outside the grids wrap? It does not appear so, not even when it gets styled as inline.
+        .g1 - Basic grid with columns: 1fr 200px 200px 1fr and contained in % max-width and with padding and a background-image:
     </p>
 
-    <div class="grid g1 nine">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box four">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box nine">9</div>
-        <div class="box ten">10</div>
-        <div class="box eleven">11</div>
-        <div class="box twelve">12</div>
+    <div class="grid g1">
+        <div class="box one odd">1</div>
+        <div class="box two even">2</div>
+        <div class="box three odd">3</div>
+        <div class="box four even">4</div>
+        <div class="box five odd">5</div>
+        <div class="box six even">6</div>
+        <div class="box seven odd">7</div>
+        <div class="box eight even">8</div>
+        <div class="box nine odd">9</div>
+        <div class="box ten even">10</div>
+        <div class="box eleven odd">11</div>
+        <div class="box twelve even">12</div>
     </div>
 
     <p>
-        Bullshit, stuff, and more stuff, nomsayn?
+        h1 and h2 headings displaying as inline-blocks:
+    </p>
+    <div class="dumb-n-dumberer">
+        <div class="dumb">
+            <h1>Narf!</h1><h1>Narf!</h1><h1>Narf!</h1><h1>Narf!</h1>
+        </div>
+        <div class="dumberer">
+            <h2>Derp.</h2><h2>Derp.</h2><h2>Derp.</h2><h2>Derp.</h2>
+        </div>
+    </div>
+
+    <p>
+        .g2 - columns: 1fr 1fr 300px 100px 1fr and contained in % max-width:
     </p>
 
-    <div class="stupid">
-        <h1>Narf!</h1><h1>Narf!</h1><h1>Narf!</h1><h1>Narf!</h1>
+    <div class="grid g2">
+        <div class="box one odd">1</div>
+        <div class="box two even">2</div>
+        <div class="box three odd">3</div>
+        <div class="box four even">4</div>
+        <div class="box five odd">5</div>
+        <div class="box six even">6</div>
+        <div class="box seven odd">7</div>
+        <div class="box eight even">8</div>
+        <div class="box nine odd">9</div>
+        <div class="box ten even">10</div>
+        <div class="box eleven odd">11</div>
+        <div class="box twelve even">12</div>
     </div>
 
-    <div class="grid g2">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box four">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box nine">9</div>
-        <div class="box ten">10</div>
-        <div class="box eleven">11</div>
-        <div class="box twelve">12</div>
-    </div>
+    <p>
+        .g3 - columns: repeat(12, 1fr) with 5px gap around grid wrapper:
+    </p>
     
     <div class="grid g3">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box four">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box nine">9</div>
-        <div class="box ten">10</div>
-        <div class="box eleven">11</div>
-        <div class="box twelve">12</div>
+        <div class="box one odd">1</div>
+        <div class="box two even">2</div>
+        <div class="box three odd">3</div>
+        <div class="box four even">4</div>
+        <div class="box five odd">5</div>
+        <div class="box six even">6</div>
+        <div class="box seven odd">7</div>
+        <div class="box eight even">8</div>
+        <div class="box nine odd">9</div>
+        <div class="box ten even">10</div>
+        <div class="box eleven odd">11</div>
+        <div class="box twelve even">12</div>
     </div>
     
+    <p>
+        .g4 - columns: 1fr 2fr auto 2fr 1fr :
+    </p>
     <div class="grid g4">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box four">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box nine">9</div>
-        <div class="box ten">10</div>
-        <div class="box eleven">11</div>
-        <div class="box twelve">12</div>
-        <div class="box thirteen">13</div>
-        <div class="box fourteen">14</div>
-        <div class="box fifteen">15</div>
+        <div class="box one odd">1</div>
+        <div class="box two even">2</div>
+        <div class="box three odd">3</div>
+        <div class="box four even">4</div>
+        <div class="box five odd">5</div>
+        <div class="box six even">6</div>
+        <div class="box seven odd">7</div>
+        <div class="box eight even">8</div>
+        <div class="box nine odd">9</div>
+        <div class="box ten even">10</div>
+        <div class="box eleven odd">11</div>
+        <div class="box twelve even">12</div>
+        <div class="box thirteen odd">13</div>
+        <div class="box fourteen even">14</div>
+        <div class="box fifteen odd">15</div>
     </div>
+
+    <p>
+        .g5 - columns: 1fr 2fr 4fr 8fr 500px 8fr 4fr 2fr 1fr :
+    </p>
     
     <div class="grid g5">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box four">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box nine">9</div>
+        <div class="box one odd">1</div>
+        <div class="box two even">2</div>
+        <div class="box three odd">3</div>
+        <div class="box four even">4</div>
+        <div class="box five odd">5</div>
+        <div class="box six even">6</div>
+        <div class="box seven odd">7</div>
+        <div class="box eight even">8</div>
+        <div class="box nine odd">9</div>
     </div>
+
+    <p>
+        min-height: 100vh, columns: 1fr 250px 250px 250px 1fr, rows: auto 1fr auto :<br><br>The combination of 'min-height: 100vh' and 'grid-template-row: auto 1fr auto' pushes the last row to the bottom, creating a sticky footer.<br><br>'align-self: start' keeps the 6, 7, 8, 9 and 10 divs from expanding to fill the empty space.
+    </p>
+
+    <p>
+        .g6 - min-height: 100vh, columns: 1fr 200px 350px 200px 1fr, rows: auto 1fr auto :
+    </p>
     
     <div class="grid g6">
-        <div class="box one">1</div>
-        <div class="box two">2</div>
-        <div class="box three">3</div>
-        <div class="box four">4</div>
-        <div class="box five">5</div>
-        <div class="box six">6</div>
-        <div class="box seven">7</div>
-        <div class="box eight">8</div>
-        <div class="box nine">9</div>
-        <div class="box ten">10</div>
-        <div class="box eleven">11</div>
-        <div class="box twelve">12</div>
-        <div class="box thirteen">13</div>
-        <div class="box fourteen">14</div>
-        <div class="box fifteen">15</div>
+        <div class="box one odd">1</div>
+        <div class="box two even">2</div>
+        <div class="box three odd">3</div>
+        <div class="box four even">4</div>
+        <div class="box five odd">5</div>
+        <div class="box six even">6</div>
+        <div class="box seven odd nest">
+            <div class="grid n1">
+                    <div class="box one odd">1</div>
+                    <div class="box two even">2</div>
+                    <div class="box three odd">3</div>
+                    <div class="box four even">4</div>
+                    <div class="box five odd">5</div>
+                    <div class="box six even">6</div>
+                    <div class="box seven odd">7</div>
+                    <div class="box eight even">8</div>
+                    <div class="box nine odd">9</div>
+            </div>
+        </div>
+        <div class="box eight even">
+            <p>
+                The combination of<br><br>'min-height: 100vh'<br><br>and<br><br>'grid-template-row: auto 1fr auto'<br><br>pushes the last row to the bottom, creating a sticky footer.<br><br><br>'align-self: start'<br><br>keeps the middle row divs from expanding to fill the empty space.
+            </p>
+        </div>
+        <div class="box nine odd">9</div>
+        <div class="box ten even">10</div>
+        <div class="box eleven odd">11</div>
+        <div class="box twelve even">12</div>
+        <div class="box thirteen odd">13</div>
+        <div class="box fourteen even">14</div>
+        <div class="box fifteen odd">15</div>
     </div>
 </body>
 </html>
