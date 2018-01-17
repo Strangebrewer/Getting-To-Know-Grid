@@ -1,0 +1,103 @@
+body {
+    background-color: #aaa;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+.box {
+    background-color: #595959;
+    font-weight: bold;
+    padding: 30px 0;
+    border: 2px solid #333;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.g1 {
+    display: grid;
+    grid-template-columns: 1fr 200px 200px 1fr;
+    grid-gap: 10px;
+    max-width: 60%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.g2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px 100px 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 75%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.g3 {
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    grid-gap: 5px;
+    padding: 30px 5px;
+}
+
+.g4 {
+    display: grid;
+    grid-template-columns: 1fr 300px 300px 300px 1fr;
+    grid-template-rows: 85px 1fr 85px;
+    grid-gap: 30px;
+    padding: 30px 0;
+}
+
+.g4 .box {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    border: none;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 0;
+}
+
+.g4 .one {
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    grid-column: 1 / 6;
+    grid-row: 1;
+    border-radius: 0;
+    z-index: 0;
+}
+
+.g4 .two {
+    background-color: #4aaaa5;
+    grid-column: 2 / 5;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.g4 .four {
+    background-color: #fff;
+    color: #777;
+    font-size: .5em;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    align-self: stretch;
+}
+
+.g4 .five {
+    background-color: #fff;
+    color: #777;
+    font-size: .5em;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.g4 .seven {
+    background-color: #666;
+    grid-column: 1 / 6;
+    grid-row: 3;
+    font-size: .35em;
+    border-radius: 0;
+    border: none;
+    border-top: 5px solid #4aaaa5;
+}
